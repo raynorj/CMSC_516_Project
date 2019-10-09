@@ -1,0 +1,30 @@
+The problem we are trying to solve is SemEval 2020 task 10 ie,
+https://competitions.codalab.org/competitions/20815.
+
+Introduction
+
+The purpose of the task is to design automatic methods for emphasis selection, i.e. choosing candidates for emphasis in short written text, to enable automated design assistance in authoring.
+
+The datasets given contain very short texts, usually fewer than 10 words.
+Here are examples of the problem.
+1. Hard work never killed a man.
+2. Never give up on the things that make you smile.
+3. Throw like a Girl
+
+For stage 1, to the given task, we followed 3 approaches.
+1. Bi-LSTM method(bi-directional long short term memory)
+2. CNN(Convolutional neural network)
+3. MLP(Multi-layer perceptron)
+
+During pre-processing step, we modified the file loading function to make all words it reads as lowercase as our dataset is not very large and it helps to deal with sparsity issues. We have used word2vec embedding model to learn the embeddings of each word and produces vector representation of each word. After embedding step, we have done zero padding to keep the size of all the sentence vectors the same.
+
+We tried to find solution for the task by following the above 3 methods. We choose Bi-LSTM as this type of network is used to remember long-term dependencies , to process word sequence information in both forward and backward directions and assign probabilities to each word in the sentence. We choose CNN as this type of network...........
+
+Evaluation Criteria 
+
+
+
+
+Individual Contributions of team members
+1. Vasanthi Tarigopula - For approach 1: Preprocessing(Lower casing), word2vec embedding model, zero padding, Bi-LSTM model generation with accuracy calculation.
+2. Jesse Raynor - For approach 2 & 3, Preprocessing(lower casing), word2vec embedding model, zero padding, CNN, MLP model generation, calculating evaluation criteria Matchm for each model.

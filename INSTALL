@@ -1,0 +1,5 @@
+Usage of this software requires Anaconda. Installing Anaconda on Linux can be done using the directions at the following link.
+
+https://docs.anaconda.com/anaconda/install/linux/
+
+After installing the most recent version of Anaconda appropriate for your system, run install.sh to install this software's dependencies.
